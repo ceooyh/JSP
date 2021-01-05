@@ -81,6 +81,8 @@ C:\workspace\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\550518005
 \memberProject\src
 C:\workspace\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1182244713.index
 \BoardProject\src
+C:\workspace\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3363425517.index
+\BoardProject\src
 C:\workspace\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4235479935.index
 \memberProject\src
 C:\workspace\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4162013139.index

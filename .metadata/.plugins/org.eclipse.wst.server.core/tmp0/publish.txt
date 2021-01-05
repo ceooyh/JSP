@@ -1,5 +1,5 @@
 #Tomcat publish data
-#Tue Jan 05 12:19:36 KST 2021
+#Tue Jan 05 16:04:12 KST 2021
 org.eclipse.jst.jee.server\:BoardProject=C\:\\tomcat\\webapps\\BoardProject
 org.eclipse.jst.jee.server\:step1=C\:\\tomcat\\webapps\\step1
 org.eclipse.jst.jee.server\:step02=C\:\\tomcat\\webapps\\step02
