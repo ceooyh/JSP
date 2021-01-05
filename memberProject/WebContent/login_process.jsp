@@ -1,0 +1,27 @@
+<%@page import="vo.memberVo"%>
+<%@page import="service.memberService"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+	String id = request.getParameter("id");
+	String pass = request.getParameter("pass");
+	
+ 	memberVo vo = memberService.getInstance().loginSearchMemberVo(id, pass);
+ 	if(vo == null){
+	%>
+		<script>
+			alert("로그인에 실패하였습니다.");
+			history.back();
+		</script>
+	<% 			
+	 		session.setAttribute("login", false);
+ 	}else{
+ 			
+	 		session.setAttribute("login", true);
+			session.setAttribute("id", vo.getId());
+			session.setAttribute("name", vo.getName());
+			session.setAttribute("grade", vo.getGrade().toLowerCase());
+			response.sendRedirect("main.jsp");
+ 	}
+
+%>

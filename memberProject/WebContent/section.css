@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+section{
+		width:1200px;
+		margin:0 auto;
+		height: 600px;
+		box-sizing: border-box;
+	}
+	.container{
+		padding-top:150px;
+		width: 300px;
+		margin: 0 auto;
+	}
+	td{
+		height: 40px;
+		box-sizing: border-box;
+	}
+	input{
+		width: 250px;
+		height: 30px;
+	}
+	button{
+		width: 100px;
+		height: 30px;
+	}
