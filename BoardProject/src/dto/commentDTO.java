@@ -8,12 +8,14 @@ public class commentDTO {
 	private String writer;
 	private int bLike;
 	private int bHate;
-	
-	public commentDTO(String content, String writer) {
+
+	public commentDTO(int bno, String content, String writer) {
 		super();
+		this.bno = bno;
 		this.content = content;
 		this.writer = writer;
 	}
+	
 	public commentDTO(int cno, int bno, String content, String cDate, String writer, int bLike, int bHate) {
 		super();
 		this.cno = cno;
@@ -71,5 +73,6 @@ public class commentDTO {
 		return "commentDTO [cno=" + cno + ", bno=" + bno + ", content=" + content + ", cDate=" + cDate + ", writer="
 				+ writer + ", bLike=" + bLike + ", bHate=" + bHate + "]";
 	}
+
 	
 }

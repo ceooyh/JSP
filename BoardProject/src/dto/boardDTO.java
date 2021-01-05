@@ -1,6 +1,6 @@
 package dto;
 
-public class boardDTO {
+public class BoardDTO {
 	private int bno;
 	private String title;
 	private String bDate;
@@ -10,13 +10,13 @@ public class boardDTO {
 	private int bLike;
 	private int bHate;
 	
-	public boardDTO(String title, String writer, String content) {
+	public BoardDTO(String title, String writer, String content) {
 		super();
 		this.title = title;
 		this.writer = writer;
 		this.content = content;
 	}
-	public boardDTO(int bno, String title, String bDate, int bCount, String writer, String content, int bLike,
+	public BoardDTO(int bno, String title, String bDate, int bCount, String writer, String content, int bLike,
 			int bHate) {
 		super();
 		this.bno = bno;
@@ -28,52 +28,53 @@ public class boardDTO {
 		this.bLike = bLike;
 		this.bHate = bHate;
 	}
-	private int getBno() {
+	
+	public int getBno() {
 		return bno;
 	}
-	private void setBno(int bno) {
+	public void setBno(int bno) {
 		this.bno = bno;
 	}
-	private String getTitle() {
+	public String getTitle() {
 		return title;
 	}
-	private void setTitle(String title) {
+	public void setTitle(String title) {
 		this.title = title;
 	}
-	private String getbDate() {
+	public String getbDate() {
 		return bDate;
 	}
-	private void setbDate(String bDate) {
+	public void setbDate(String bDate) {
 		this.bDate = bDate;
 	}
-	private int getbCount() {
+	public int getbCount() {
 		return bCount;
 	}
-	private void setbCount(int bCount) {
+	public void setbCount(int bCount) {
 		this.bCount = bCount;
 	}
-	private String getWriter() {
+	public String getWriter() {
 		return writer;
 	}
-	private void setWriter(String writer) {
+	public void setWriter(String writer) {
 		this.writer = writer;
 	}
-	private String getContent() {
+	public String getContent() {
 		return content;
 	}
-	private void setContent(String content) {
+	public void setContent(String content) {
 		this.content = content;
 	}
-	private int getbLike() {
+	public int getbLike() {
 		return bLike;
 	}
-	private void setbLike(int bLike) {
+	public void setbLike(int bLike) {
 		this.bLike = bLike;
 	}
-	private int getbHate() {
+	public int getbHate() {
 		return bHate;
 	}
-	private void setbHate(int bHate) {
+	public void setbHate(int bHate) {
 		this.bHate = bHate;
 	}
 	@Override
