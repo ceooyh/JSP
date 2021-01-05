@@ -1,0 +1,30 @@
+<%@page import="service.memberService"%>
+<%@page import="dao.memberDao"%>
+<%@page import="vo.memberVo"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page errorPage="error.jsp" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css"></style>
+</head>
+<body>
+		<%
+			request.setCharacterEncoding("utf-8");
+			String id = request.getParameter("id");
+			String name = request.getParameter("name");
+			
+			memberService.getInstance().searchMemberVo(id, name);
+			
+			RequestDispatcher dispatcher = request.getRequestDispatcher("pass_update_action.jsp");
+			dispatcher.forward(request, response);
+		%>
+	<form action="pass_update_process.jsp">
+		아이디 : <input  type="text" name="id" value="id" readonly><br>
+	</form>
+</body>
+</html>
+

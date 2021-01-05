@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인 연습예제</title>
+</head>
+<body>
+	<form action="login.jsp">
+	
+	</form>
+</body>
+</html>

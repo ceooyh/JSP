@@ -1,0 +1,19 @@
+<%@page import="vo.memberVo"%>
+<%@page import="service.memberService"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+	String id = request.getParameter("id");
+	String pass = request.getParameter("pass");
+	
+ 	memberVo vo = memberService.getInstance().loginSearchMemberVo(id, pass);
+ 	if(vo == null){
+ 			//로그인 성공 처리
+ 	}else{
+	 		session.setAttribute("login", true);
+			session.setAttribute("alert", vo.getId());
+			session.removeAttribute("msg");
+	response.sendRedirect("main.jsp");
+ 	}
+
+%>

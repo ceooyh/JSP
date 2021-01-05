@@ -1,0 +1,11 @@
+<%@page import="dao.memberDao"%>
+<%@page import="vo.memberVo"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+	String id = request.getParameter("id");
+	String name = request.getParameter("name");
+	
+	memberDao dao = new memberDao(id, name);
+	
+%>

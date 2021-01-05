@@ -1,0 +1,5 @@
+drop table member cascade constraint;
+
+create table memeber{
+	id var_char2(25byte)
+}

@@ -1,0 +1,65 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ajax를 이용한 검색처리</title>
+<style type="text/css">
+	section{
+		width:1200px;
+		margin:0 auto;
+		height: 600px;
+		box-sizing: border-box;
+	}
+	.container{
+		padding-top:150px;
+		width: 300px;
+		margin: 0 auto;
+	}
+	td{
+		height: 40px;
+		box-sizing: border-box;
+	}
+	input{
+		width: 250px;
+		height: 30px;
+	}
+	button{
+		width: 100px;
+		height: 30px;
+	}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$.ajax({
+			
+		})
+	});
+</script>
+</head>
+<body>
+	<jsp:include page="template/header.jsp"></jsp:include>
+	<section>
+		<div class="container">
+			<form method="post" action="serverAjax.jsp">
+				<table>
+					<tr>
+						<td><label for="name">검색할 대상 :</label></td>
+						<td><input type="text" placeholder="검색할 대상을 입력하세요" name ="name" id="name"></td>
+					</tr>
+					<tr>
+						<td><button type="submit">검색</button> </td>
+						<td><button type="reset">취소</button></td>
+					 </tr>
+				</table>
+				</form>
+			</div>
+			<div id="area">
+				<!-- 결과값 출력부분 -->
+			</div>
+		</section>
+	<jsp:include page="template/footer.jsp"></jsp:include>
+</body>
+</html>

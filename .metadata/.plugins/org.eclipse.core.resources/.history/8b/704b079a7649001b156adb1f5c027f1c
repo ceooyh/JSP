@@ -1,0 +1,26 @@
+package obj;
+
+public class Lotto {
+	private int set;
+
+	
+	public lotto(int set) {
+		super();
+		this.set = set;
+	}
+
+	protected int getSet() {
+		return set;
+	}
+
+	protected void setSet(int set) {
+		this.set = set;
+	}
+
+	@Override
+	public String toString() {
+		return "lotto [set=" + set + "]";
+	}
+	
+	
+}

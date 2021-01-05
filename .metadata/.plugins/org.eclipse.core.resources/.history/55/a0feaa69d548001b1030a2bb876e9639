@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>기초문법</title>
+</head>
+<body>
+	<!-- 선언문 작성 -->
+	<%!
+		//필드와 메서드를 작성하는장소(jsp를 클래스라고 생각하면 된다.)
+		String message = "선언문 메세지";
+		public String getMessage(){
+			return message;
+		}
+	%>
+	
+</body>
+</html>

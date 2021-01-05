@@ -1,0 +1,32 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+package config;
+
+public class DBmanager {
+	private static DBmanager instance = new DBmanager();
+	private Connection conn = null;
+	private DBmanager() {
+		//드라이버 로딩
+		try {
+			Class.forName(DBconfig.DB_DRIVER);
+			//db접속
+			conn = DriverManager.getConnection(DBconfig.DB_URL, DBconfig.DB_USER, DBconfig.DB_PASSWD);
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	public Connection getConnection() {
+		return conn;
+	}
+	public static DBmanager getInstance() {
+		if(instance == null)
+			instance = new DBmanager();
+		return instance;
+	}
+	
+}
+

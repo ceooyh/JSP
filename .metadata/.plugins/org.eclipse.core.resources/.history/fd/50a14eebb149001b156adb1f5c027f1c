@@ -1,0 +1,22 @@
+package service;
+
+import vo.memberVo;
+
+public class memberService {
+	private static memberService instance = new memberService();
+	
+	
+	public memberService() {
+	}
+
+
+	private static memberService getInstance() {
+		if(instance == null) {
+			instance = new memberService();
+		}
+		return instance;
+	}
+
+	public void insertMemberVo(memberVo vo)
+	
+}

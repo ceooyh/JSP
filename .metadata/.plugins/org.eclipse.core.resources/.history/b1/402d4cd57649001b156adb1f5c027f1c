@@ -1,0 +1,10 @@
+<%@page import="obj.Lotto"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+	int set = Integer.parseInt(request.getParameter("set"));
+
+	Lotto lotto = new Lotto(set);
+	request.setAttribute("obj", lotto);
+	
+%>

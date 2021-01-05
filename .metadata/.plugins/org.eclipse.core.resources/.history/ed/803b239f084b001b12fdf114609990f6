@@ -1,0 +1,31 @@
+<%@page import="vo.memberVo"%>
+<%@page import="service.memberService"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page errorPage="true" %>
+<%
+	request.setCharacterEncoding("utf-8");
+	String id = request.getParameter("id");
+	String pass = request.getParameter("pass");
+	String name = request.getParameter("name");
+	int age = Integer.parseInt(request.getParameter("age"));
+
+	memberVo vo = memberService.getInstance().updateMemberVo(id, pass, name, age);
+	if(vo == null){%>
+		<script>
+			alter("업데이트가 실패하였습니다.");
+		</script>
+	%>
+	history.back();
+	}else{%>
+	<script>
+			alter("업데이트가 성공하였습니다.");
+	</script>
+<%
+	session.setAttribute("login", true);
+	session.setAttribute("id", vo.getId());
+	session.setAttribute("name", vo.getName());
+	session.setAttribute("age", vo.getAge());
+	response.sendRedirect("main.jsp");	
+	}
+%>

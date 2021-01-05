@@ -15,6 +15,7 @@
 		border:1px solid black;
 		text-align: center;
 		position: relative;
+		box-sizing: border-box;
 	}
 	ul{
 		list-style-type: none;

@@ -1,0 +1,7 @@
+
+create table member{
+	id var_char2(25byte) primary key,
+	pass var_char2(50byte) not null,
+	name var_char2(30byte),
+	age number
+};

@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+	boolean flag = false;
+	//세션 정보를 읽어옴	
+	if(session.getAttribute("login") != null)
+		flag=(boolean) session.getAttribute("login");
+	if(flag){
+		%>
+			<%= session.getAttribute("name")%>님 로그인 하셨습니다.<br>
+			<a href="#">로그아웃</a> | 정보수정
+		<%
+	}
+%>
+	<form action="login_process.jsp">
+		<input type="text" name="id">
+		<input type="password" name="pass">
+		<button>로그인</button>
+	</form>
+</body>
+</html>

@@ -1,0 +1,6 @@
+package step02;
+
+public class person {
+	private String id;
+	private int age;
+}

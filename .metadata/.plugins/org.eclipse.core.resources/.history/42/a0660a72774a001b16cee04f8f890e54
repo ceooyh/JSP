@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>메인페이지</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style type="text/css">
+	#container{
+		height: 600px;
+		/* background-color: lime; */
+	}
+</style>
+</head>
+<body>
+		<%
+			boolean flag = false;
+			if(session.getAttribute("login")!=null)
+				flag = (boolean) session.getAttribute("login");
+			if(flag){
+		%>
+				<jsp:include page="template/header2.jsp"></jsp:include>
+				<script type="text/javascript">
+					$(function(){
+						$("#loginfo").html(<%=session.getAttribute( + "'" + "alert" + "'" + )%> +"님이 로그인 하셨습니다.");
+					});
+				</script>
+				<jsp:include page="template/footer.jsp"></jsp:include>
+		<%}else{
+			%>
+				<jsp:include page="template/header.jsp"></jsp:include>
+				<div id="container">메인페이지</div>
+				<jsp:include page="template/footer.jsp"></jsp:include>
+			<%}
+			%>
+</body>
+</html>

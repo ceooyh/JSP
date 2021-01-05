@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="obj.person" %>
+<%
+	String name = request.getParameter("name");
+	int age = Integer.parseInt(request.getParameter("age"));
+	
+	person p = new person(name,age);
+	System.out.println(p.toString());
+	request.setAttribute("obj", p);
+%>
+<!-- 페이지 이동1 사용자의 요청이 전부 초기화 
+<script>
+	location.href = "person_result.jsp";
+</script>
+-->

@@ -1,0 +1,105 @@
+
+12월 28, 2020 15:26:58.659 NEW SESSION
+12월 28, 2020 15:26:58.659 [2912:13500:1228/152658.655:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 28, 2020 15:26:59.634 [2912:5608:1228/152659.633:ERROR:device_event_log_impl.cc(211)] [15:26:59.634] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+12월 28, 2020 15:27:09.309 [10696:14288:1228/152709.309:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 28, 2020 15:27:13.22 [10696:4216:1228/152713.022:ERROR:device_event_log_impl.cc(211)] [15:27:13.021] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+12월 28, 2020 15:37:08.855 [1228/153708.854:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 29, 2020 09:37:52.934 NEW SESSION
+12월 29, 2020 09:37:52.934 [1544:2148:1229/093752.929:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 29, 2020 09:37:57.134 [1544:84:1229/093757.134:ERROR:device_event_log_impl.cc(211)] [09:37:57.134] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+12월 29, 2020 09:47:52.509 [1229/094752.508:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 29, 2020 10:04:27.334 [9308:14028:1229/100427.333:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 29, 2020 10:06:08.151 [17776:15664:1229/100608.150:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 29, 2020 10:06:16.582 [11176:17700:1229/100616.580:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 29, 2020 10:06:21.384 [11176:5148:1229/100621.384:ERROR:device_event_log_impl.cc(211)] [10:06:21.384] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+12월 29, 2020 10:14:18.139 [14116:6044:1229/101418.138:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 29, 2020 10:14:18.908 [14116:13116:1229/101418.907:ERROR:device_event_log_impl.cc(211)] [10:14:18.907] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+12월 29, 2020 10:14:39.968 [1280:16816:1229/101439.966:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 29, 2020 10:14:50.695 [1280:4164:1229/101450.694:ERROR:device_event_log_impl.cc(211)] [10:14:50.694] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+12월 29, 2020 10:24:39.509 [1229/102439.509:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 30, 2020 10:44:53.510 NEW SESSION
+12월 30, 2020 10:44:53.510 [8660:2640:1230/104453.507:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 30, 2020 10:44:58.346 [8660:1256:1230/104458.346:ERROR:device_event_log_impl.cc(211)] [10:44:58.346] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+12월 30, 2020 10:54:53.44 [1230/105453.043:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 30, 2020 14:34:20.574 [1230/143420.543:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\MASTER\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\600289b0-baa9-47af-8847-59d580b55ffa: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 30, 2020 14:34:20.589 [1230/143420.546:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\MASTER\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\0cc6fa63-5711-43d9-9577-c3774949a044: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 30, 2020 14:34:20.590 [1230/143420.548:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\MASTER\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\ec169579-b621-41df-b563-c9d7c2796789: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 30, 2020 14:35:59.295 [17436:11148:1230/143559.294:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 30, 2020 14:36:09.146 [17436:10636:1230/143609.146:ERROR:device_event_log_impl.cc(211)] [14:36:09.146] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+12월 30, 2020 14:45:58.847 [1230/144558.847:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 30, 2020 16:24:01.111 [18224:1400:1230/162401.110:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 30, 2020 16:24:03.44 [18224:13972:1230/162403.043:ERROR:device_event_log_impl.cc(211)] [16:24:03.043] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+12월 30, 2020 16:34:00.679 [1230/163400.678:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 30, 2020 16:43:26.943 [13780:17496:1230/164326.942:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 30, 2020 16:44:09.18 [1280:17048:1230/164409.017:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 30, 2020 16:44:16.940 [1280:7160:1230/164416.939:ERROR:device_event_log_impl.cc(211)] [16:44:16.940] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+12월 30, 2020 16:46:21.08 [2736:16996:1230/164621.008:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 30, 2020 16:46:26.769 [2736:2640:1230/164626.769:ERROR:device_event_log_impl.cc(211)] [16:46:26.769] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+12월 30, 2020 16:49:11.513 [5608:4368:1230/164911.513:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 30, 2020 16:49:35.288 [17016:10040:1230/164935.287:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 30, 2020 16:50:11.360 [1256:6464:1230/165011.358:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 30, 2020 16:50:20.135 [1256:6284:1230/165020.134:ERROR:device_event_log_impl.cc(211)] [16:50:20.134] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+12월 30, 2020 16:55:30.587 [8216:17100:1230/165530.586:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 30, 2020 16:55:32.330 [8216:4904:1230/165532.330:ERROR:device_event_log_impl.cc(211)] [16:55:32.329] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+12월 30, 2020 17:00:17.64 [13460:6440:1230/170017.062:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 30, 2020 17:00:24.796 [13460:3524:1230/170024.796:ERROR:device_event_log_impl.cc(211)] [17:00:24.796] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+12월 30, 2020 17:02:14.273 [8160:10060:1230/170214.272:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 30, 2020 17:02:25.263 [8160:16652:1230/170225.263:ERROR:device_event_log_impl.cc(211)] [17:02:25.262] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+12월 30, 2020 17:05:46.931 [17600:1860:1230/170546.930:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 30, 2020 17:05:52.763 [17600:11132:1230/170552.762:ERROR:device_event_log_impl.cc(211)] [17:05:52.762] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+12월 30, 2020 17:08:01.777 [13492:16832:1230/170801.777:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 30, 2020 17:08:26.682 [9964:18236:1230/170826.682:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 30, 2020 17:08:29.411 [9964:660:1230/170829.411:ERROR:device_event_log_impl.cc(211)] [17:08:29.411] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+12월 30, 2020 17:08:34.701 [13988:1608:1230/170834.700:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 30, 2020 17:08:38.393 [13988:18240:1230/170838.392:ERROR:device_event_log_impl.cc(211)] [17:08:38.392] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+12월 30, 2020 17:18:34.287 [1230/171834.287:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 30, 2020 17:37:58.190 [13988:18240:1230/173758.190:ERROR:device_event_log_impl.cc(211)] [17:37:58.190] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)
+12월 30, 2020 17:53:08.293 [13988:18240:1230/175308.293:ERROR:device_event_log_impl.cc(211)] [17:53:08.293] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+12월 30, 2020 21:54:34.116 [16920:17924:1230/215434.116:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 30, 2020 21:54:38.194 [16920:17928:1230/215438.193:ERROR:device_event_log_impl.cc(211)] [21:54:38.194] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+12월 30, 2020 22:04:33.624 [1230/220433.623:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 31, 2020 24:49:11.432 [17540:252:1231/004911.430:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 31, 2020 24:49:18.218 [17540:588:1231/004918.218:ERROR:device_event_log_impl.cc(211)] [00:49:18.218] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+
+12월 31, 2020 14:05:12.36 NEW SESSION
+12월 31, 2020 14:05:12.36 [18256:16948:1231/140512.034:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 31, 2020 14:05:14.630 [18256:15364:1231/140514.630:ERROR:device_event_log_impl.cc(211)] [14:05:14.630] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+12월 31, 2020 14:09:47.303 [15452:14776:1231/140947.302:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 31, 2020 14:09:50.362 [15452:2016:1231/140950.362:ERROR:device_event_log_impl.cc(211)] [14:09:50.362] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+12월 31, 2020 14:09:55.445 [592:5460:1231/140955.444:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 31, 2020 14:09:59.324 [592:3468:1231/140959.324:ERROR:device_event_log_impl.cc(211)] [14:09:59.324] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+12월 31, 2020 14:16:39.59 [3400:10736:1231/141639.055:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 31, 2020 14:16:46.927 [3400:3008:1231/141646.926:ERROR:device_event_log_impl.cc(211)] [14:16:46.926] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+12월 31, 2020 14:26:38.566 [1231/142638.566:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 31, 2020 14:27:19.641 [18148:4260:1231/142719.640:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 31, 2020 14:27:23.529 [18148:16736:1231/142723.529:ERROR:device_event_log_impl.cc(211)] [14:27:23.529] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+12월 31, 2020 14:37:19.190 [1231/143719.190:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 31, 2020 14:47:27.917 [17184:4268:1231/144727.916:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 31, 2020 14:47:34.689 [17184:15516:1231/144734.689:ERROR:device_event_log_impl.cc(211)] [14:47:34.689] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+12월 31, 2020 14:57:27.479 [1231/145727.478:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 31, 2020 17:31:46.909 [9504:17420:1231/173146.908:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+12월 31, 2020 17:31:56.856 [9504:628:1231/173156.856:ERROR:device_event_log_impl.cc(211)] [17:31:56.856] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+12월 31, 2020 17:41:46.471 [1231/174146.471:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+1월 04, 2021 09:15:12.696 NEW SESSION
+1월 04, 2021 09:15:12.696 [872:656:0104/091512.681:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+1월 04, 2021 09:23:48.915 [1580:3360:0104/092348.914:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+1월 04, 2021 09:23:55.777 [1580:1648:0104/092355.777:ERROR:device_event_log_impl.cc(211)] [09:23:55.777] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+1월 04, 2021 09:33:48.455 [0104/093348.454:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+1월 04, 2021 11:26:10.718 [6108:6988:0104/112610.717:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+1월 04, 2021 11:26:16.560 [6108:2112:0104/112616.560:ERROR:device_event_log_impl.cc(211)] [11:26:16.561] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+1월 04, 2021 11:36:10.297 [0104/113610.297:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+1월 05, 2021 10:47:04.633 NEW SESSION
+1월 05, 2021 10:47:04.633 [5368:15752:0105/104704.630:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+1월 05, 2021 10:47:07.404 [5368:18604:0105/104707.403:ERROR:device_event_log_impl.cc(211)] [10:47:07.404] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+1월 05, 2021 10:57:04.184 [0105/105704.183:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+1월 05, 2021 11:03:03.561 [15708:10908:0105/110303.560:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+1월 05, 2021 11:03:05.574 [15708:6728:0105/110305.574:ERROR:device_event_log_impl.cc(211)] [11:03:05.574] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+1월 05, 2021 11:13:03.71 [0105/111303.070:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+1월 05, 2021 11:59:24.83 [9332:19428:0105/115924.082:ERROR:data_pack.cc(126)] Could not open pak file for writing: 다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다. (0x20)
+1월 05, 2021 11:59:31.118 [9332:10756:0105/115931.118:ERROR:device_event_log_impl.cc(211)] [11:59:31.117] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+1월 05, 2021 12:09:23.558 [0105/120923.557:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)

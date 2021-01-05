@@ -1,0 +1,8 @@
+drop table member cascade constraint;
+
+create table memeber{
+	id var_char2(25byte) primary key,
+	pass num(50byte),
+	name var_char2(20byte),
+	age num(3byte)
+}

@@ -1,0 +1,43 @@
+package service;
+
+import dao.memberDao;
+import vo.memberVo;
+
+public class memberService {
+	private static memberService instance = new memberService();
+	
+	
+	private memberService() {
+	}
+
+
+	public static memberService getInstance() {
+		if(instance == null) {
+			instance = new memberService();
+		}
+		return instance;
+	}
+
+	public void insertMemberVo(memberVo vo) throws Exception {
+		memberDao.getInstance().insertMemberVo(vo);
+	}
+	public void searchMemberVo(String id, String name) throws Exception {
+		memberVo vo = memberDao.getInstance().selectMemberVo(id);
+		if(!vo.equals(name))
+			throw new Exception("정보에 해당하는 회원이 없습니다.");
+	}
+	public void updatePass(String id,String pass) throws Exception {
+		memberDao.getInstance().updatePass(id,pass);
+	}
+	public memberVo loginSearchMemberVo(String id, String pass) {
+		memberVo vo =  memberDao.getInstance().loginSearchMemberVo(id,pass);
+		return vo;
+	}
+	public memberVo selectMemberVO(String id) {
+		memberVo vo = memberDao.getInstance().selectMemberVo(id);
+		return vo;
+	}
+	public memberVo updateMemberVo(String id, String pass, String name, int age) {
+		
+	}
+}

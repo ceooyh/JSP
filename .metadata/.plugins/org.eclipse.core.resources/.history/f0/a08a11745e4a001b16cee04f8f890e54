@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+	/*
+		<세션(Session)>
+		-웹브라우저 : 서버에 저장되어 있는 데이터
+		-웹브라우저가 닫히면 데이터는 전부 날아감
+		(사용자 데이터가 서버에 저장)
+		
+		<쿠키(cookie)>
+		-사용자 데이터 -> 사용자 디바이스에 저장
+		민감한 개인정보를 저장하지 않습니다.
+		털려도 되는 데이터를 저장해둡니다.
+	*/
+	String id = request.getParameter("id");
+	String pass = request.getParameter("pass");
+	
+	if(id.equals("admin") && pass.equals("1234")){
+		//로그인 성공 처리
+		session.setAttribute("login", true);
+		session.setAttribute("name", 관리자);
+	}
+%>

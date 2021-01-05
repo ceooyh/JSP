@@ -1,0 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+   <%@ page isErrorPage="true" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	페이지 처리 중 에러가 났습니다.
+	Exception Class : <%=exception.getClass().getName() %>
+	Exception Message : <%=exception.getMessage() %>
+</body>
+</html>

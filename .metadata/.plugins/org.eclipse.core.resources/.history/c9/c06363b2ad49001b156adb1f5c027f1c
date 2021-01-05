@@ -1,0 +1,8 @@
+package vo;
+
+public class memberVo {
+	private String id;
+	private String pass;
+	private String name;
+	private int age;
+}

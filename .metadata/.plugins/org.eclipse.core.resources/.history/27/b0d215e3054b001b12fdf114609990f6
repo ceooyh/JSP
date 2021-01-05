@@ -1,0 +1,19 @@
+<%@page import="vo.memberVo"%>
+<%@page import="service.memberService"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+	String id = request.getParameter("id");
+	String pass = request.getParameter("pass");
+	String name = request.getParameter("name");
+	String age = request.getParameter("age");
+
+	memberVo vo = memberService.getInstance().updateMemberVO(id,pass,name,age);
+	if(vo == null){%>
+		<script>
+			alter("업데이트가 완료되었습니다.")
+		</script>
+	
+	%>	
+	}
+%>

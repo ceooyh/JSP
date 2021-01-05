@@ -1,0 +1,58 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.container{
+		width: 1200px;
+		margin: 0px auto;
+		padding-top: 30px;
+		box-sizing: border-box;
+	}
+	#menu_bar{
+		width: 1200px;
+		box-sizing: border-box;
+	}
+	#menu_bar > select{
+		width: 150px;
+	}
+</style>
+</head>
+<body>
+	<%
+			boolean flag = false;
+			
+			if(session.getAttribute("login") != null)
+			flag = (boolean)session.getAttribute("login");
+			if(flag){
+				
+			}
+	%>
+	<jsp:include page="template/header.jsp"></jsp:include>
+	<div class="container">
+		<div id="menu_bar">
+				<select name="kind">
+					<option value="id">아이디</option>
+					<option value="name">이름</option>
+					<option value="grade">등급</option>
+				</select>
+				<input type="text" name="search">
+				<button id="btn_submit">검색</button>
+		</div>
+		<hr>
+		<div id="content">
+			<ul id="title">
+				<li>아이디</li>
+				<li>이름</li>
+				<li>나이</li>
+				<li>등급</li>
+				<li>비고</li>
+			</ul>
+		</div>
+	</div>
+	<jsp:include page="template/footer.jsp"></jsp:include>
+</body>
+</html>

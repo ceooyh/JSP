@@ -1,0 +1,12 @@
+<%@page import="java.util.ArrayList"%>
+<%@page import="service.memberService"%>
+<%@page import="vo.memberVo"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<% 
+	String name = request.getParameter("name");
+
+	ArrayList<memberVo> list = memberService.getInstance().searchNameMemberVO(name);
+	
+	out.write("test;message;Hello;World");
+%>

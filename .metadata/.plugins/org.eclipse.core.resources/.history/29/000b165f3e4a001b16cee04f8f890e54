@@ -1,0 +1,25 @@
+package service;
+
+import dao.memberDao;
+import vo.memberVo;
+
+public class memberService {
+	private static memberService instance = new memberService();
+	
+	
+	public memberService() {
+	}
+
+
+	public static memberService getInstance() {
+		if(instance == null) {
+			instance = new memberService();
+		}
+		return instance;
+	}
+
+	public void insertMemberVo(memberVo vo) throws Exception {
+		memberDao.getInstance().insertMemberVo(vo);
+	}
+	
+}

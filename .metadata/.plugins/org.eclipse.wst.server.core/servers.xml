@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat-config" deployDir="C:\tomcat\webapps" hostname="localhost" id="Tomcat" name="Tomcat" runtime-id="Tomcat" server-type="org.eclipse.jst.server.tomcat.85" server-type-id="org.eclipse.jst.server.tomcat.85" start-timeout="45" stop-timeout="15" testEnvironment="false" timestamp="8">
+    <list key="modules" value0="WebTest::org.eclipse.jst.jee.server:WebTest::jst.web::3.1" value1="step1::org.eclipse.jst.jee.server:step1::jst.web::3.1" value2="step02::org.eclipse.jst.jee.server:step02::jst.web::3.1" value3="memberProject::org.eclipse.jst.jee.server:memberProject::jst.web::3.1" value4="step03::org.eclipse.jst.jee.server:step03::jst.web::3.1" value5="BoardProject::org.eclipse.jst.jee.server:BoardProject::jst.web::3.1"/>
+  </server>
+</servers>

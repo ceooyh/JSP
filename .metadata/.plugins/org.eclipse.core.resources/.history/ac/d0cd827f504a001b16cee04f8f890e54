@@ -1,0 +1,29 @@
+<%@page import="service.memberService"%>
+<%@page import="dao.memberDao"%>
+<%@page import="vo.memberVo"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page errorPage="error.jsp" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css"></style>
+</head>
+<body>
+		<%
+			request.setCharacterEncoding("utf-8");
+			String id = request.getParameter("id");
+			String name = request.getParameter("name");
+			
+			memberService.getInstance().searchMemberVo(id, name);
+		%>
+	<form action="pass_update_process.jsp">
+		아이디 : <input  type="text" name="id" value="id" readonly><br>
+		새비밀번호 : <input  type="text" name="pass" value="pass" readonly><br>
+		button
+	</form>
+</body>
+</html>
+

@@ -1,0 +1,9 @@
+#Tomcat publish data
+#Tue Jan 05 12:19:36 KST 2021
+org.eclipse.jst.jee.server\:BoardProject=C\:\\tomcat\\webapps\\BoardProject
+org.eclipse.jst.jee.server\:step1=C\:\\tomcat\\webapps\\step1
+org.eclipse.jst.jee.server\:step02=C\:\\tomcat\\webapps\\step02
+org.eclipse.jst.jee.server\:step03=C\:\\tomcat\\webapps\\step03
+org.eclipse.jst.jee.server\:/binary\:C\:\\workspace\\jsp\\memberProject\\WebContent\\\uC324\uC758\uCF54\uB4DC\\MemberProject.war=C\:\\tomcat\\webapps\\memberProject\\\uC324\uC758\uCF54\uB4DC\\MemberProject.war
+org.eclipse.jst.jee.server\:WebTest=C\:\\tomcat\\webapps\\WebTest
+org.eclipse.jst.jee.server\:memberProject=C\:\\tomcat\\webapps\\memberProject

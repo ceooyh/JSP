@@ -1,0 +1,34 @@
+package vo;
+
+public class memberVo {
+	private String id;
+	private String pass;
+	private String name;
+	private int age;
+	
+	
+	protected String getId() {
+		return id;
+	}
+	protected void setId(String id) {
+		this.id = id;
+	}
+	protected String getPass() {
+		return pass;
+	}
+	protected void setPass(String pass) {
+		this.pass = pass;
+	}
+	protected String getName() {
+		return name;
+	}
+	protected void setName(String name) {
+		this.name = name;
+	}
+	protected int getAge() {
+		return age;
+	}
+	protected void setAge(int age) {
+		this.age = age;
+	}
+}
