@@ -20,6 +20,7 @@ public class XMLTest2 {
 					PrintNode(t);
 				}else {
 					System.out.println(t.getNodeName()+ " : " + t.getTextContent());
+				}
 			}
 		}
 	}

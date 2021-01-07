@@ -33,23 +33,23 @@
 	ArrayList<BoardDTO> list = BoardService.getInstance().selectBoardList();
 %>
 <style>
-	.board{
+	#container .board{
 		margin:20px auto;
 		border-collapse: collapse;
 	}
-	th, td{
+	#container  th, td{
 		padding: 10px;
 		text-align: center;
 	}
-	th{
+	#container  th{
 		border-top : 2px solid black;
 		border-bottom : 2px solid black;
 	}
-	td{
+	#container  td{
 		border-top : 1px solid black;
 		border-bottom : 1px solid black;
 	}
-	tr:last-child > td {
+	#container  tr:last-child > td {
 		border-bottom : 2px solid black;
 	}
 	.title{

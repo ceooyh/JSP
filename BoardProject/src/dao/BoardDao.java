@@ -1,10 +1,10 @@
 package dao;
 
+import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-
 import config.DBManager;
 import dto.BoardDTO;
 
@@ -27,10 +27,13 @@ public class BoardDAO {
 		ResultSet rs = null;
 		int result = 0;
 		try {
-			pstmt = manager.getConn().prepareStatement(sql);
+			Connection conn = manager.getSource().getConnection();
+			pstmt = conn.prepareStatement(sql);
 			rs = pstmt.executeQuery();
-			if(rs.next())
+			if(rs.next()) {
 				result = rs.getInt(1);
+				manager.getSource().getConnection().commit();
+			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}finally {
@@ -43,13 +46,15 @@ public class BoardDAO {
 		String sql = "insert into board(bno,title,writer,content) values(?,?,?,?)";
 		PreparedStatement pstmt = null;
 		try {
-			pstmt = manager.getConn().prepareStatement(sql);
+			Connection conn = manager.getSource().getConnection();
+			pstmt = conn.prepareStatement(sql);
 			pstmt.setInt(1, dto.getBno());
 			pstmt.setString(2, dto.getTitle());
 			pstmt.setString(3, dto.getWriter());
 			pstmt.setString(4, dto.getContent());
 			
 			int count = pstmt.executeUpdate();
+			manager.getSource().getConnection().commit();
 			System.out.println(count + "건 게시글 등록 완료");
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -64,12 +69,14 @@ public class BoardDAO {
 		ResultSet rs = null;
 		BoardDTO dto = null;
 		try {
-			pstmt = manager.getConn().prepareStatement(sql);
+			Connection conn = manager.getSource().getConnection();
+			pstmt = conn.prepareStatement(sql);
 			pstmt.setInt(1, bno);
 			rs = pstmt.executeQuery();
 			if(rs.next()) {
 				dto = new BoardDTO(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getInt(4),
 						rs.getString(5), rs.getString(6), rs.getInt(7), rs.getInt(8));	
+				manager.getSource().getConnection().commit();
 			}
 
 		} catch (SQLException e) {
@@ -85,10 +92,12 @@ public class BoardDAO {
 		PreparedStatement pstmt = null;
 		
 		try {
-			pstmt = manager.getConn().prepareStatement(sql);
+			Connection conn = manager.getSource().getConnection();
+			pstmt = conn.prepareStatement(sql);
 			pstmt.setInt(1, bno);
 			
 			pstmt.executeUpdate();
+			manager.getSource().getConnection().commit();
 			
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -110,9 +119,11 @@ public class BoardDAO {
 		PreparedStatement pstmt = null;
 		
 		try {
-			pstmt = manager.getConn().prepareStatement(sql);
+			Connection conn = manager.getSource().getConnection();
+			pstmt = conn.prepareStatement(sql);
 			pstmt.setInt(1, bno);
 			pstmt.executeUpdate();
+			manager.getSource().getConnection().commit();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}finally {
@@ -130,7 +141,8 @@ public class BoardDAO {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		try {
-			pstmt = manager.getConn().prepareStatement(sql);
+			Connection conn = manager.getSource().getConnection();
+			pstmt = conn.prepareStatement(sql);
 			pstmt.setInt(1, bno);
 			rs = pstmt.executeQuery();
 			if(rs.next()) {
@@ -152,12 +164,14 @@ public class BoardDAO {
 		ResultSet rs = null;
 		ArrayList<BoardDTO> list = new ArrayList<BoardDTO>();
 		try {
-			pstmt = manager.getConn().prepareStatement(sql);
+			Connection conn = manager.getSource().getConnection();
+			pstmt = conn.prepareStatement(sql);
 			rs = pstmt.executeQuery();
 			while(rs.next()) {
 				list.add(new BoardDTO(rs.getInt(1), rs.getString(2), rs.getString(3),
 						rs.getInt(4), rs.getString(5), rs.getString(6),
 						rs.getInt(7), rs.getInt(8)));	
+				manager.getSource().getConnection().commit();
 			}
 
 		} catch (SQLException e) {
