@@ -11,7 +11,7 @@
 			$("button").click(function(){
 				var data = $("#frm").serialize();
 				$.ajax({
-					url : "serverAjax.jsp",
+					url : "ServerAjax.jsp",
 					data : data,
 					method : "get",
 					success : function(data){

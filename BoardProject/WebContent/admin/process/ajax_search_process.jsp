@@ -1,3 +1,5 @@
+<%@page import="org.json.JSONArray"%>
+<%@page import="org.json.JSONObject"%>
 <%@page import="vo.MemberVO"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="service.MemberService"%>
@@ -14,14 +16,19 @@
 		kind = "grade_name";
 	search = search.toUpperCase();
 	ArrayList<MemberVO> list = MemberService.getInstance().searchMember(kind,search);
-	String result = "";
-	for(int i=0;i<list.size();i++){
-		result += list.get(i).getId() + " " + list.get(i).getName()
-				+ " " + list.get(i).getAge() + " " + list.get(i).getGrade()+",";
-		
-	}
-	out.write(result);	
 	
+	JSONObject jsonObject = new JSONObject();
+	JSONArray jsonArray = new JSONArray();
+	for(int i=0;i<list.size();i++){
+		JSONObject temp = new JSONObject();
+		temp.put("id",list.get(i).getId());
+		temp.put("name",list.get(i).getName());
+		temp.put("age",list.get(i).getAge());
+		temp.put("grade",list.get(i).getGrade());
+		jsonArray.put(temp);		
+	}
+	jsonObject.put("result",jsonArray);
+	out.write(jsonObject.toString());
 %>
 
 
