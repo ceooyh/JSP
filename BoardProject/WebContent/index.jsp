@@ -83,10 +83,10 @@
 	<div id="container">
 		<!-- 게시판 글목록 -->
 		<%
-			int pageNo = 1;
-			if(request.getParameter("pageNo") != null)
+			int pageNo = 1;//맨처음 접속을 했을때 페이지 번호가 없으니 첫페이지로 고정시켜준다
+			if(request.getParameter("pageNo") != null)//페이지 번호가 없으면 해당 페이지로 이동시켜주기 위해서 페이지 번호를 지정
 				pageNo = Integer.parseInt(request.getParameter("pageNo"));
-			ArrayList<BoardDTO> list = BoardService.getInstance().selectBoardList(pageNo);
+			//ArrayList<BoardDTO> list = BoardService.getInstance().selectBoardList(pageNo);
 		%>
 		<table class="board">
 			<tr>
@@ -128,14 +128,15 @@
 						<a href="index.jsp?pageNo=<%=pageVO.getStartPageOfPageGroup()-1%>">◀</a>
 					<%
 						}
+						int start = pageVO.getStartPageOfPageGroup();
+						int end = pageVO.getEndPageOfPageGroup();
+						for(int i=start;i<=end;i++){
 					%>
 						<!-- loop start -->
-						<a href="index.jsp?pageNo=6">6</a>
-						<a href="index.jsp?pageNo=7">7</a>
-						<a href="index.jsp?pageNo=8">8</a>
-						<a href="index.jsp?pageNo=9">9</a>
+						<a href="index.jsp?pageNo=<%=i%>"><%=i %></a>
 						<!-- loop end -->
 						<%
+						}
 						if(pageVO.isNextPageGroup()){
 						%>
 						<a href="index.jsp?pageNo=<%=pageVO.getEndPageOfPageGroup()+1%>">▶</a>
