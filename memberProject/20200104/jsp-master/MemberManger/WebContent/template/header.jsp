@@ -42,24 +42,24 @@
 <nav id="menu_bar">
 	<ul>
 		<li><a href="main.jsp">HOME</a></li>
-		<li><a href="logout.jsp">로그아웃</a></li>
+		<li><a href="logout.do">로그아웃</a></li>
 		<%
 			if(session.getAttribute("grade").equals("master"))
 			{
 				%>
 				<li><a href="member_manage_main.jsp">전체 회원 관리</a></li>
-				
+				 
 				<%	
 			}
 		%>
-		<li><a href="member_update_view.jsp">회원정보수정</a></li>
-		<li><a href="#">문의하기</a></li>
+		<li><a href="updateView.do">회원정보수정</a></li>
+		<li><a href="qnaView.do">문의하기</a></li>
 	</ul>
 	<div id="login">
 		<table>
 			<tr>
-				<td><img src="img/<%=session.getAttribute("grade")+".png"%>" style="width:32px;"></td>
-				<td><%=session.getAttribute("name") %>님 로그인</td>
+				<td><img src="img/${sessionScope.grade}.png" style="width:32px;"></td>
+				<td>${sessionScope.name }님 로그인</td>
 			</tr>
 			
 		</table>
