@@ -104,7 +104,7 @@ public class memberDao {
 		Connection conn = null;
 		ResultSet rs = null;
 		PreparedStatement pstmt = null;
-		String sql = "select e.id,e.pass,e.name,e.age,g.gname from member e, grade_list g where e.grade=g.grade and e.id like ? and e.pass like ?";
+		String sql = "select e.id,e.pass,e.name,e.age,g.grade_name from member e, grade_list g where e.grade=g.grade and e.id like ? and e.pass like ?";
 		
 		try {
 			conn = DBmanager.getInstance().getConnection();
