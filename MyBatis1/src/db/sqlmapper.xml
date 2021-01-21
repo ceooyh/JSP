@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="db.sqlmapper">
+ 	<select id="selectAllCountEmployee" resultType="int">
+ 		select count(*) from employee
+ 	</select>
+ 	<select id="selectAllEmployee" resultType="dto.EmployeeDTO">
+ 		select * from employee
+ 	</select>
+ 	<select id="selectPositionEmployee" resultType="dto.EmployeeDTO" parameterType="int">
+ 		<![CDATA[select * from employee where position < #{no}]]>
+ 	</select>
+ 	<select id="selectPositionAreaEmployee" resultType="dto.EmployeeDTO" parameterType="map">
+ 		<![CDATA[select * from employee where position between #{n1} and #{n2}]]>
+ 	</select>
+ 	<insert id="insertEmployee" parameterType="dto.EmployeeDTO">
+ 		insert into employee(eno, name, department,position) 
+ 		values(#{eno},#{name},#{department},#{position})
+ 	</insert>
+ 	<update id="updateEmployee" parameterType="dto.EmployeeDTO">
+ 		update employee set name = #{name}, department=#{department}, position = #{position}
+ 		where eno = #{eno} 
+ 	</update>
+ 	<select id="selectNameEmployee" resultType="dto.EmployeeDTO" parameterType="string">
+ 		select * from employee where name like '%'||#{name}||'%'
+ 	</select>
+ 	<delete id="deleteEmployee" parameterType="int">
+ 		delete from employee where position = #{position}
+ 	</delete>
+ 	
+</mapper>

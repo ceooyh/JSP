@@ -209,22 +209,3 @@ public class MemberDAO {
 	
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

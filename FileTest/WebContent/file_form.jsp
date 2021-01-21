@@ -5,13 +5,34 @@
 <head>
 <meta charset="UTF-8">
 <title>파일 업로드 폼</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function () {
+		var count =3; //첨부파일 태그 개수
+		$("#plus").click(function(){
+			if(count == 5) return;
+			count++;
+			$("#frm").append("<p><input type='file' name='file"+ count+"'></p>")
+		});
+		$("#minus").click(function(){
+			if(count == 1) return;
+			//alert($(this).parent().parent().children("p").last().children().attr("name"));
+			$(this).parent().parent().children("p").last().remove();
+			
+			count--;
+		});
+	});
+</script>
 </head>
 <body>
-	<form action="upload.do" enctype="multipart/form-data" method="post">
-		파일 : <input type="file" name="file1"><br>
-		파일 : <input type="file" name="file2"><br>
-		작성자 : <input type="text" name="param"><br>
-		<button>업로드</button>
+	<form action="upload.do" enctype="multipart/form-data" method="post" id="frm">
+	<p> <button>전송</button> </p>
+	<p><input type="text" name="writer" placeholder="작성자">전송</p>
+		<p><input type="file" name="file1"><button type="button" id="plus">+</button><button type="button" id="minus">-</button><br></p> 
+		<p><input type="file" name="file2"></p>
+		<p><input type="file" name="file3"></p>
 	</form>
+	
+	
 </body>
 </html>
